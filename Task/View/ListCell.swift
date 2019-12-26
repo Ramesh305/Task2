@@ -9,16 +9,24 @@
 import UIKit
 
 class ListCell: UITableViewCell {
-
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var mobileNumber: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configuration(person:Person){
+        DispatchQueue.main.async {
+            self.name.text = person.name
+            self.mobileNumber.text = person.mobileNumber
+        }
+        
     }
+    
+    
+    
 
 }

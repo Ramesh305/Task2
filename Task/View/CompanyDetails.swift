@@ -10,15 +10,13 @@ import UIKit
 
 class CompanyDetails: UITableViewCell {
 
+    @IBOutlet weak var websiteName: UILabel!
+    @IBOutlet weak var companyName: UILabel!
+    @IBOutlet weak var companyDetails: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+   
 }

@@ -9,16 +9,17 @@
 import UIKit
 
 class UserDetailsCell: UITableViewCell {
-
+    
+    @IBOutlet weak var phone: UILabel!
+    @IBOutlet weak var eamilId: UILabel!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var detailsTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-    }
 
 }
